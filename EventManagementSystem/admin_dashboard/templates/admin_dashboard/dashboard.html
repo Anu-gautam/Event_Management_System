@@ -1,0 +1,13 @@
+<h1>Admin Dashboard</h1>
+<h2>Memberships</h2>
+<ul>
+    {% for membership in memberships %}
+        <li>{{ membership.title }} - {{ membership.fee }}</li>
+    {% endfor %}
+</ul>
+<h2>Transactions</h2>
+<ul>
+    {% for transaction in transactions %}
+        <li>{{ transaction.vendor.shop_name }} - {{ transaction.amount }}</li>
+    {% endfor %}
+</ul>

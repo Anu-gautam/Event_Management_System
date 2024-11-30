@@ -1,0 +1,7 @@
+<h1>Create Vendor Profile</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="shop_name">Shop Name:</label>
+    <input type="text" name="shop_name" required>
+    <button type="submit">Create Vendor</button>
+</form>

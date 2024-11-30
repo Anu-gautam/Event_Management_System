@@ -1,0 +1,7 @@
+<h1>User Dashboard</h1>
+<h2>Your Orders</h2>
+<ul>
+    {% for order in orders %}
+        <li>{{ order.item.name }} - Quantity: {{ order.quantity }}</li>
+    {% endfor %}
+</ul>

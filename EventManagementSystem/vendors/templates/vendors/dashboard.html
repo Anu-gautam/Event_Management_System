@@ -1,0 +1,7 @@
+<h1>Vendor Dashboard</h1>
+<a href="{% url 'add_item' %}">Add Item</a>
+<ul>
+    {% for item in items %}
+        <li>{{ item.name }} - {{ item.price }}</li>
+    {% endfor %}
+</ul>
